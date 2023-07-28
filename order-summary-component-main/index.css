@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%) ;
+    --Bright-blue: hsl(245, 75%, 52%) ;
+    --Very-pale-blue: hsl(225, 100%, 98%) ;
+    --Desaturated-blue: hsl(224, 23%, 55%) ;
+    --Dark-blue: hsl(223, 47%, 23%) ;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    height: 560px;
+    margin: 50px auto;
+    border-radius: 10px;   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+
+.card-image {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.description {
+    text-align: center;
+    padding: 20px 26px ;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--Desaturated-blue);
+
+}
+
+.info {
+    margin: 0 40px 0px 40px;
+    display : flex ;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.price-info {
+    padding: 5px ;
+
+}
+
+.price-info span {
+    font-family:700;
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+}
+
+a:hover {
+    text-decoration: none;
+}
+a {
+    font-weight: 700;
+    color: var(--Bright-blue) ;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: 0.7;
+}
+
+.btn {
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 15px 100px;
+    background-color: var(--Bright-blue);
+    color: white;
+    border: none;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.btn-refuse {
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    color : var(--Desaturated-blue);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 100px;  
+    cursor: pointer; 
+}
+
+.btn-refuse:hover {
+    color : black ;
+    transition: 0.7;
+}
+
+
